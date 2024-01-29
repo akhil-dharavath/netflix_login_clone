@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+body {
+  background: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  fill: #e50914;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+
+svg {
+  width: 150px;
+}
+
+.form {
+  display: block;
+  margin: auto;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 50px;
+  padding: 60px 50px 40px;
+  width: 314px;
+}
+
+form h2 {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+form input {
+  display: block;
+  background-color: #333;
+  color: white;
+  padding: 22px 21px 4px;
+  border: none;
+  border-radius: 6px;
+  width: 272px;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+}
+
+form input:focus-visible {
+  background: #333;
+}
+
+form label {
+  color: #8c8c8c;
+  font-size: 11px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+form button {
+  position: relative;
+  display: block;
+  width: 312px;
+  margin: 36px 0px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #e50914;
+  padding: 16px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.need_help {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5px 0px 5px;
+}
+
+.remember {
+  display: flex;
+}
+
+.remember label,
+.need_help a {
+  top: 0px;
+  font-size: 13px;
+  color: #8c8c8c;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+
+.signup {
+  margin: 70px 10px 0px;
+  color: #8c8c8c;
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.signup a {
+  color: white;
+  margin-left: 10px;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.form > p {
+  margin: 5px 10px 0px 10px;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.brake{
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+footer p,
+footer p a {
+  color: #8c8c8c;
+  font-size: 15px;
+}
+
+footer p,
+footer div,
+footer select {
+  margin-left: 100px;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div a {
+  color: #8c8c8c;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: default;
+}
+
+footer div a span {
+  display: inline;
+  cursor: pointer;
+}
+
+footer div a span:hover {
+  text-decoration: underline;
+}
+
+select {
+  width: 120px;
+  background-color: transparent;
+  padding: 10px;
+  color: #8c8c8c;
+}
+
+.input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 35px 0 5px;
+}
+
+@media (max-width: 900px) {
+  footer div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: black;
+  }
+
+  .logo {
+    left: 15px;
+  }
+
+  form h2 {
+    margin-bottom: 10px;
+  }
+
+  .form {
+    padding: 28px 10px;
+    background-color: transparent;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 22px 0px 4px;
+  }
+
+  form label {
+    left: 10px;
+  }
+
+  input[type="checkbox"] {
+    width: 17px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .signup {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  .form > p {
+    margin-left: 0px;
+  }
+
+  .brake{
+    display: block;
+    margin-top: 70px;
+    border-top: 1px solid #8c8c8c;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  footer div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer p,
+  footer div {
+    margin-left: 0px;
+  }
+
+  footer select {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.get_started {
+  background: url("./assets/background.jpeg");
+  background-size: cover;
+}
+
+.logo {
+  fill: #e50914;
+  position: relative;
+  left: 140px;
+  top: 20px;
+}
+
+svg {
+  width: 135px;
+  position: relative;
+  z-index: 2;
+}
+
+.lang_sign div {
+  display: inline-flex;
+  position: relative;
+  left: -145px;
+  top: 18px;
+}
+
+.lang_sign {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lang_sign select {
+  width: 120px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0px 10px;
+  color: white;
+  height: 29px;
+  border: 1px solid gray;
+  margin-right: 30px;
+  border-radius: 6px;
+}
+
+.lang_sign div a {
+  color: white;
+  background-color: #e50914;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input_button {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 180px;
+}
+
+.input_button h1,
+.input_button h3,
+.input_button p {
+  color: white;
+  text-align: center;
+}
+
+.input_button h1 {
+  padding-top: 215px;
+  font-size: 43px;
+  font-weight: 900;
+}
+
+.input_button h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.input_button p {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.input_button div {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.input_button input {
+  width: 300px;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+.input_button input::placeholder {
+  color: darkgray;
+}
+
+.input_button input:focus-visible {
+  border-color: white;
+}
+
+.input_button button {
+  width: 200px;
+  background: #e50914;
+  padding: 12px 30px 14px 14px;
+  border: none;
+  border-bottom: 1px solid #e50914;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.input_button button span {
+  font-size: 70px;
+  line-height: 0px;
+  position: absolute;
+  top: 35%;
+  right: 14%;
+  font-weight: 100;
+}
+
+/* secton enjoy tv */
+.enjoy_tv {
+  position: relative;
+}
+
+.enjoy_tv > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-top: 8px solid rgb(35, 35, 35);
+}
+
+.enjoy_tv div div,
+.enjoy_tv div img {
+  width: 40%;
+  color: white;
+  z-index: 2;
+}
+
+.enjoy_tv video {
+  position: absolute;
+  right: 15.7%;
+  top: 22.5%;
+  z-index: 1;
+  width: 29%;
+}
+
+.enjoy_tv h1 {
+  font-size: 45px;
+}
+
+.enjoy_tv p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* download_wrapper */
+.download_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-top: 8px solid rgb(35, 35, 35);
+  color: white;
+  position: relative;
+  padding: 60px 0px;
+}
+
+.download_wrapper > img,
+.download_wrapper > div {
+  width: 40%;
+}
+
+.download_wrapper h1 {
+  font-size: 45px;
+}
+
+.download_wrapper p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.download {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 22% !important;
+  left: 19%;
+  bottom: 10%;
+  background-color: black;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid gray;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download img {
+  height: 70px;
+}
+
+.loading {
+  height: 50px !important;
+}
+
+.download div {
+  margin: 0px 10px;
+}
+
+.download h5 {
+  font-size: 15px;
+}
+
+.download p {
+  color: #0071eb;
+  font-size: 13px;
+}
+
+.enjoy_tv .mac_video {
+  width: 24%;
+  top: 11%;
+  right: 17.5%;
+}
+
+/* FAQ */
+.FAQ {
+  background-color: black;
+  border-top: 8px solid rgb(35, 35, 35);
+}
+
+.FAQ h1 {
+  color: white;
+  text-align: center;
+  padding: 35px 0px 10px;
+  font-size: 40px;
+}
+
+.FAQ button {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 22px;
+  margin: 10px auto;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.FAQ button:hover {
+  background: rgb(56, 56, 56);
+}
+
+.FAQ button p:last-child {
+  font-size: 40px;
+  line-height: 0px;
+  font-weight: 100;
+}
+
+.FAQ_input_button p {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.FAQ_input_button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FAQ_input_button input {
+  width: 300px;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+.FAQ_input_button button {
+  width: 200px;
+  background: #e50914;
+  padding: 12px 14px 14px 35px;
+  border: none;
+  border-bottom: 1px solid #e50914;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.FAQ_input_button button span {
+  font-size: 70px;
+  line-height: 0px;
+  position: absolute;
+  top: 35%;
+  right: 14%;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: space-evenly;
+  padding: 40px 0px;
+  border-top: 8px solid rgb(35, 35, 35);
+}
+
+footer p,
+footer p a {
+  color: #8c8c8c;
+  font-size: 15px;
+}
+
+footer p,
+footer div,
+footer select {
+  margin-left: 100px;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div a {
+  color: #8c8c8c;
+  line-height: 30px;
+  font-size: 13px;
+  cursor: default;
+}
+
+footer div a span {
+  display: inline;
+  cursor: pointer;
+}
+
+footer div a span:hover {
+  text-decoration: underline;
+}
+
+footer select {
+  width: 120px;
+  background-color: transparent;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+footer p:last-child {
+  font-size: 13px;
+  margin-top: 10px;
+}
